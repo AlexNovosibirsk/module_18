@@ -18,8 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
 
+from task2.views import index, Index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('index1/', index),
+    path('index2/', Index.as_view()),
+    path('index3/', TemplateView.as_view(template_name='second_task/class_template.html')),
 ]
 
