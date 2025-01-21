@@ -21,6 +21,7 @@ from django.views.generic import TemplateView
 from task2.views import index, Index
 # from task3.views import Platform, Games, Cart
 from task4.views import platform, games, cart
+from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -38,5 +39,8 @@ urlpatterns = [
     path('platform/', platform),
     path('platform/games/', games),
     path('platform/cart/', cart),
+
+    path('regh/', sign_up_by_html),
+    path('regd/', sign_up_by_django),
 ]
 
