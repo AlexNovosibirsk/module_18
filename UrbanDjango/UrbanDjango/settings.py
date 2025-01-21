@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'example3.apps.Example3Config',
     'task2.apps.Task2Config',
     'task3.apps.Task3Config',
+    'task4.apps.Task4Config',
 ]
 
 MIDDLEWARE = [

@@ -19,7 +19,8 @@ from django.urls import path
 from django.views.generic import TemplateView
 
 from task2.views import index, Index
-from task3.views import Platform, Games, Cart
+# from task3.views import Platform, Games, Cart
+from task4.views import platform, games, cart
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,8 +29,14 @@ urlpatterns = [
     path('index2/', Index.as_view()),
     path('index3/', TemplateView.as_view(template_name='second_task/class_template.html')),
 
-    path('platform/', Platform.as_view()),
-    path('platform/games/', Games.as_view()),
-    path('platform/cart/', Cart.as_view()),
+    # task 3
+    # path('platform/', Platform.as_view()),
+    # path('platform/games/', Games.as_view()),
+    # path('platform/cart/', Cart.as_view()),
+
+    # task 4
+    path('platform/', platform),
+    path('platform/games/', games),
+    path('platform/cart/', cart),
 ]
 
